@@ -20,7 +20,8 @@ $maincolor:#3a3a3a;
     	font-weight: 600;
     }
     @include media-query($on-laptop) {
-        display: inline-block;
+        display: block;
+        float: none;
     }
 }
 .masthead-nav{
@@ -37,10 +38,41 @@ $maincolor:#3a3a3a;
     	}
     }
     @include media-query($on-laptop) {
+        float: none;
     	display: block;
         padding-top: 1rem;
     	border-top: 0.075rem solid rgba(255,255,255,0.25);
     }
+}
+
+/**
+ * homepage
+ */
+
+.article-lists{
+    @extend .row;
+}
+
+.article-item{
+    float: left;
+    display: inline;
+    min-height: 1px;
+    position: relative;
+    margin-left: 3.09091%;
+    @extend .zeen-4;
+    &:nth-of-type(3n+1){
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  .article-lists {
+    max-width: 767px;
+  }
+  .article-lists [class*="article"] {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 
