@@ -1,15 +1,35 @@
 ---
 layout: default
 ---
-<div class="wrap">
-	<div class="row">
-		<header class="post-header">
-		    <h1 class="post-title">{{ page.title }}</h1>
-		    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-		  </header>
-
-		  <article class="post-content">
-		    {{ content }}
-		  </article>
+<header class="post-header">
+	<div class="wrap">
+		<div class="row">
+			<h1 class="post-title">{{ page.title }}</h1>
+			
+			<div class="post-meta">
+				<div class="post-meta-author">
+					<svg viewBox="0 0 33 35" xmlns="http://www.w3.org/2000/svg">
+						<path d="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwMCA1MDAiIGhlaWdodD0iNTAwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MDAgNTAwIiB3aWR0aD0iNTAwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTQxNS43NjIsMzQ2LjIxNGMtMTkuMDc4LTI0Ljg5Ni00Mi4xNTYtNDEuMDYzLTc1LjIyMy01MC4yMzYgIGwtMzAuOTgzLDEwOC40NzVjMCw5Ljk5Mi04LjE4MSwxOC4xNzItMTguMTcyLDE4LjE3MmMtOS45ODgsMC0xOC4xNjktOC4xOC0xOC4xNjktMTguMTcydi04Ni4zMTEgIGMwLTEyLjUzNi0xMC4xNzgtMjIuNzE1LTIyLjcxNS0yMi43MTVjLTEyLjUzNiwwLTIyLjcxMywxMC4xNzktMjIuNzEzLDIyLjcxNXY4Ni4zMTFjMCw5Ljk5Mi04LjE4MSwxOC4xNzItMTguMTcsMTguMTcyICBjLTkuOTkyLDAtMTguMTczLTguMTgtMTguMTczLTE4LjE3MmwtMzAuOTgzLTEwOC40NzVjLTMzLjA2OCw5LjI2Mi01Ni4xNDUsMjUuMzQtNzUuMjIxLDUwLjIzNiAgYy03LjU0Miw5LjgxMi0xMS42NCwyOS41MjctMTEuOTA4LDQwLjA3YzAuMDksMi43MjUsMCw1LjkwNiwwLDkuMDgydjE4LjE3MnYxOC4xNzNjMCwyMC4wNzgsMTYuMjY0LDM2LjM0LDM2LjM0MywzNi4zNGgyODEuNjQ4ICBjMjAuMDc4LDAsMzYuMzQ1LTE2LjI2MiwzNi4zNDUtMzYuMzR2LTE4LjE3M3YtMTguMTcyYzAtMy4xNzYtMC4wODktNi4zNTcsMC05LjA4MkM0MjcuMzkzLDM3NS43NDEsNDIzLjMsMzU2LjAyNSw0MTUuNzYyLDM0Ni4yMTR6ICAgTTE1NS4xMDIsMTI4LjA3M2MwLDUzLjA1OSwzMy4wNzgsMTMxLjAxMyw5NS4zOTgsMTMxLjAxM2M2MS4yMzcsMCw5NS4zOTYtNzcuOTU0LDk1LjM5Ni0xMzEuMDEzICBjMC01My4wNTctNDIuNzAyLTk2LjEyNC05NS4zOTYtOTYuMTI0QzE5Ny44MDYsMzEuOTQ5LDE1NS4xMDIsNzUuMDE2LDE1NS4xMDIsMTI4LjA3M3oiIGZpbGw9IiMwMTAxMDEiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==">
+					</svg>
+					{% if page.author %} • {{ page.author }}{% endif %}
+				</div>
+				<div class="post-meta-date">
+					<svg viewBox="0 0 33 35" xmlns="http://www.w3.org/2000/svg">
+					  <path d="M31.522 5.9c-.49-.487-1.07-.73-1.742-.73h-2.477V3.32c0-.848-.304-1.574-.91-2.178-.607-.604-1.336-.906-2.187-.906h-1.24c-.85 0-1.58.302-2.186.906-.607.604-.91 1.33-.91 2.177v1.85h-7.432V3.32c0-.848-.303-1.574-.91-2.178C10.922.538 10.193.236 9.34.236H8.104c-.852 0-1.58.302-2.188.906-.606.604-.91 1.33-.91 2.177v1.85H2.53c-.67 0-1.25.24-1.742.73S.05 6.96.05 7.63V32.3c0 .666.246 1.244.736 1.733.49.488 1.07.732 1.742.732h27.25c.672 0 1.253-.244 1.743-.732.49-.49.74-1.067.74-1.734V7.63c0-.668-.24-1.246-.73-1.734zm-9.174-2.58c0-.18.057-.328.173-.444.12-.115.27-.173.45-.173h1.24c.18 0 .33.058.45.173.117.116.175.264.175.443v5.54c0 .18-.06.325-.173.44-.116.116-.264.174-.445.174h-1.24c-.18 0-.33-.058-.444-.174-.114-.112-.17-.26-.17-.44V3.32zm-14.865 0c0-.18.058-.328.174-.444.117-.115.265-.173.446-.173H9.34c.182 0 .33.058.446.173.116.116.175.264.175.443v5.54c0 .18-.05.325-.17.44-.11.116-.26.174-.44.174H8.11c-.18 0-.33-.058-.446-.174-.116-.112-.174-.26-.174-.44V3.32zM29.78 32.296H2.527v-19.73h27.25v19.73z" fill-rule="evenodd"></path>
+					</svg>
+					{{ page.date | date: "%b %-d, %Y" }}
+				</div>
+				<div class="post-meta-category">
+					{{page.categories}}
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
+</header>
+<article class="post-content">
+	<div class="wrap">
+		<div class="row">  
+			{{ content }} 
+		</div>
+	</div>
+</article>
