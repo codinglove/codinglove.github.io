@@ -1,3 +1,5 @@
+$maincolor:#3a3a3a;
+
 /**
  * Heading
  */
@@ -7,7 +9,7 @@
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
     text-align: center;
-    background-color: #3a3a3a;
+    background-color: $maincolor;
 }
 
 .masthead .masthead-logo {
@@ -40,4 +42,18 @@
     	border-top: 0.075rem solid rgba(255,255,255,0.25);
     }
 }
-    
+
+
+/**
+ * footer
+ */
+
+footer{
+	background: $maincolor;
+	h1{color:#fff;}
+	color:rgba(#fff,0.9);
+	padding:3rem 0;
+	a{
+		color:#eee;
+	}
+}
