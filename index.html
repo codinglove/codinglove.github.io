@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="home">
+<!-- <div class="home">
 
   <h1 class="page-heading">Posts</h1>
 
@@ -20,4 +20,32 @@ layout: default
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
+</div>
+ -->
+
+<div class="wrap">
+  <div class="row">
+    <ul class="article-lists">
+    {% for post in site.posts %}
+    <li class="article-item">
+      <header class="article-category">
+        <h2>Javascript</h2>
+      </header>
+      <sectition class="article-content">
+        <h1 class="article-title">
+          <a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
+        </h1>
+        <div class="artcle-contributor">
+          <p class="article-contributor-name">
+            oleh <a href="#">Muharrir</a>
+          </p>
+        </div>
+        <div class="article-pub">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </div>
+      </sectition>
+    </li>
+    {% endfor %}
+  </ul>
+  </div>
 </div>

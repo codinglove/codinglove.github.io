@@ -228,7 +228,7 @@ table {
  */
 @font-face {
   font-family: "foundation-icons";
-  src: url('../fonts/foundation-icons.ttf?1429058315') format('truetype'), url('../fonts/foundation-icons.eot?&1429058315#iefix') format('embedded-opentype'), url('../fonts/foundation-icons.woff?1429058315') format('woff'), url('../fonts/foundation-icons.svg?1429058315#fontcustom') format('svg');
+  src: url('../fonts/foundation-icons.ttf?1447033315') format('truetype'), url('../fonts/foundation-icons.eot?&1447033315#iefix') format('embedded-opentype'), url('../fonts/foundation-icons.woff?1447033315') format('woff'), url('../fonts/foundation-icons.svg?1447033315#fontcustom') format('svg');
 }
 .step {
   display: inline-block;
@@ -1811,7 +1811,7 @@ header {
   position: relative;
   height: 100vh;
   margin-bottom: 50px;
-  background: url('../img/main-bg.jpg?1429189443') center;
+  background: url('../img/main-bg.jpg?1447033315') center;
   background-size: cover;
   display: flex;
   flex-direction: column;
