@@ -1,0 +1,43 @@
+/**
+ * Heading
+ */
+
+.masthead{
+	padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-color: #3a3a3a;
+}
+
+.masthead .masthead-logo {
+    float: left;
+    font-size: 1.5rem;
+    color: #fff;
+    span{
+    	font-weight: 600;
+    }
+    @include media-query($on-laptop) {
+        display: inline-block;
+    }
+}
+.masthead-nav{
+	float: right;
+    margin-top: .5rem;
+    a{
+    	color:#eee;
+    	margin-right: 1.25rem;
+    	&:last-child{
+    		margin-right: 0;
+    	}
+    	&:hover{
+    		color:#fff;
+    	}
+    }
+    @include media-query($on-laptop) {
+    	display: block;
+        padding-top: 1rem;
+    	border-top: 0.075rem solid rgba(255,255,255,0.25);
+    }
+}
+    
