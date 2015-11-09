@@ -13,7 +13,7 @@ $maincolor:#3a3a3a;
 }
 
 .masthead .masthead-logo {
-    padding:0.3em;
+    padding:0.3em 0;
     float: left;
     font-size: 1.7rem;
     color: #fff;
@@ -114,10 +114,14 @@ $maincolor:#3a3a3a;
     max-height: 125px;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 500;
     a{
         color: #262626;
         display: table-cell;
         width: 100%;
+        &:hover{
+            color:#EB5745;
+        }
     }
 }
 
@@ -126,6 +130,9 @@ $maincolor:#3a3a3a;
     bottom: 15px;
     color: #949494;
     font-size: 0.8125em;
+    a{
+        color:#EB5745;
+    }
 }
 
 .article-contributor-name{
