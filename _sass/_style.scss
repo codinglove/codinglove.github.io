@@ -1,4 +1,7 @@
 $maincolor:#3a3a3a;
+$merah:#EB5745;
+// $merah:#1C94c6;
+$biru:#1c94c6;
 
 /**
  * Heading
@@ -87,8 +90,9 @@ $maincolor:#3a3a3a;
 
 
 .article-category{
-    border-bottom: 2px solid #1c94c6;
-    color: #1c94c6;
+    border-bottom: 2px solid $merah;
+    color:$merah;
+    // color: #1c94c6;
     
     font-weight: 700;
     line-height: 1.2;
@@ -120,7 +124,7 @@ $maincolor:#3a3a3a;
         display: table-cell;
         width: 100%;
         &:hover{
-            color:#EB5745;
+            color:$merah;
         }
     }
 }
@@ -131,7 +135,7 @@ $maincolor:#3a3a3a;
     color: #949494;
     font-size: 0.8125em;
     a{
-        color:#EB5745;
+        color:$merah;
     }
 }
 
@@ -167,7 +171,7 @@ $maincolor:#3a3a3a;
 }
 .post-header{
     color: #fff;
-    background: #EB5745;
+    background: $merah;
     // margin-bottom: 2rem;
 }
 .post-title{
