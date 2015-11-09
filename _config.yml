@@ -12,3 +12,16 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+#  List Nama Penulis
+authors:
+  muslih:
+    name: Muslih
+    position: Software Developer Intern
+    gravatar: d4acca0bcb24dc67644055d4e44a6b29
+    web: http://muslih.me
+    github: muslih
+    twitter: muslihzarth
+    about: |    
+      Summer intern at Comoyo. Likes front-end development, new technology
+      and cake. Currently active as Head of IT for [ISFiT](http://www.isfit.org).
