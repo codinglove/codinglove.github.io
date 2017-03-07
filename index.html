@@ -5,24 +5,7 @@ layout: default
 <div class="wrap">
   <ul class="article-lists">
     {% for post in site.posts %}
-    <li class="article-item">
-      <header class="article-category">
-        <h2>Javascript</h2>
-      </header>
-      <sectition class="article-content">
-        <h1 class="article-title">
-          <a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
-        </h1>
-        <div class="article-contributor">
-          <p class="article-contributor-name">
-            oleh <a href="#">{{post.author }}</a>
-          </p>
-        </div>
-        <div class="article-pub">
-          {{ post.date | date: "%b %-d, %Y" }}
-        </div>
-      </sectition>
-    </li>
+    {% include index-post-card.html %}
     {% endfor %}
   </ul>
 </div>
